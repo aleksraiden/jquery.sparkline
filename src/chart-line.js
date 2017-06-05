@@ -242,13 +242,11 @@
                 regionMap[i] = [last || 0, next, i];
                 last = next;
                 if (y === null) {
-                    if (i) {
-                        if (yvalues[i - 1] !== null) {
-                            path = [];
-                            paths.push(path);
-                        }
-                        vertices.push(null);
+                    if (yvalues[i - 1] !== null) {
+                        path = [];
+                        paths.push(path);
                     }
+                    vertices.push(null);
                 } else {
                     if (y < this.miny) {
                         y = this.miny;
